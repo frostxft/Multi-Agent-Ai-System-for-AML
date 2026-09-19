@@ -1,0 +1,297 @@
+{
+  "data": {
+    "kind": "benchmark",
+    "source": "C:\\Users\\manju\\OneDrive\\Documents\\AML\\data\\elliptic\\raw",
+    "fingerprint": "903ac5dfcabafb86638bbceddef49530bdad2743c6cfe71a7d1c78bf0da9f043",
+    "nodes": 203769,
+    "edges": 234355,
+    "features": 165,
+    "node_semantics": "Bitcoin transactions",
+    "edge_semantics": "Directed payment flow between transactions",
+    "time_steps": [
+      1,
+      49
+    ],
+    "class_counts": {
+      "-1": 157205,
+      "0": 42019,
+      "1": 4545
+    },
+    "splits": {
+      "train": {
+        "labeled": 26381,
+        "illicit": 2871
+      },
+      "validation": {
+        "labeled": 3513,
+        "illicit": 591
+      },
+      "test": {
+        "labeled": 16670,
+        "illicit": 1083
+      }
+    },
+    "limitations": [
+      "No customer identity, KYC, sanctions, exact calendar dates or interpretable currency amounts",
+      "Anonymized features; illicit labels are benchmark categories, not proof of a crime"
+    ]
+  },
+  "model_id": "gat-7ad1b9876c4bdb71",
+  "seed": 17,
+  "epochs": 25,
+  "best_epoch": 24,
+  "feature_policy": "93 local anonymized features; exclude time and 72 preaggregated features",
+  "methodology": "Train <=29; validation 30-34; test 35-49. Unknown labels excluded from loss/metrics. Train-only normalization. Edges masked at split cutoff. Best epoch by validation AP; threshold by validation F2. Single seeded CPU run.",
+  "history": [
+    {
+      "epoch": 1,
+      "loss": 1.3090310096740723,
+      "validation_ap": 0.18746207684847985
+    },
+    {
+      "epoch": 2,
+      "loss": 1.036817193031311,
+      "validation_ap": 0.2973510447861519
+    },
+    {
+      "epoch": 3,
+      "loss": 0.930490255355835,
+      "validation_ap": 0.3447731682925345
+    },
+    {
+      "epoch": 4,
+      "loss": 0.9048691391944885,
+      "validation_ap": 0.3655052605507078
+    },
+    {
+      "epoch": 5,
+      "loss": 0.8876334428787231,
+      "validation_ap": 0.3783499409281866
+    },
+    {
+      "epoch": 6,
+      "loss": 0.8717854619026184,
+      "validation_ap": 0.3845981666705841
+    },
+    {
+      "epoch": 7,
+      "loss": 0.8471251726150513,
+      "validation_ap": 0.3884342072856059
+    },
+    {
+      "epoch": 8,
+      "loss": 0.8139567375183105,
+      "validation_ap": 0.39195033612913444
+    },
+    {
+      "epoch": 9,
+      "loss": 0.8037189841270447,
+      "validation_ap": 0.3982360727467038
+    },
+    {
+      "epoch": 10,
+      "loss": 0.7823101878166199,
+      "validation_ap": 0.4044309328401205
+    },
+    {
+      "epoch": 11,
+      "loss": 0.7769892811775208,
+      "validation_ap": 0.4147831783437328
+    },
+    {
+      "epoch": 12,
+      "loss": 0.763634979724884,
+      "validation_ap": 0.4263455455160907
+    },
+    {
+      "epoch": 13,
+      "loss": 0.7517863512039185,
+      "validation_ap": 0.4380686351887002
+    },
+    {
+      "epoch": 14,
+      "loss": 0.7556031346321106,
+      "validation_ap": 0.44968447040870346
+    },
+    {
+      "epoch": 15,
+      "loss": 0.7523619532585144,
+      "validation_ap": 0.46220208584812006
+    },
+    {
+      "epoch": 16,
+      "loss": 0.7416436076164246,
+      "validation_ap": 0.47426617899797435
+    },
+    {
+      "epoch": 17,
+      "loss": 0.7424011826515198,
+      "validation_ap": 0.48732133332150696
+    },
+    {
+      "epoch": 18,
+      "loss": 0.734502911567688,
+      "validation_ap": 0.4998873548068373
+    },
+    {
+      "epoch": 19,
+      "loss": 0.7294679284095764,
+      "validation_ap": 0.5127545591655311
+    },
+    {
+      "epoch": 20,
+      "loss": 0.7139611840248108,
+      "validation_ap": 0.5264147306091486
+    },
+    {
+      "epoch": 21,
+      "loss": 0.7139340043067932,
+      "validation_ap": 0.5345971481051756
+    },
+    {
+      "epoch": 22,
+      "loss": 0.7059159278869629,
+      "validation_ap": 0.5408861426947792
+    },
+    {
+      "epoch": 23,
+      "loss": 0.6998971104621887,
+      "validation_ap": 0.5414598313255679
+    },
+    {
+      "epoch": 24,
+      "loss": 0.6961593627929688,
+      "validation_ap": 0.5427734434547669
+    },
+    {
+      "epoch": 25,
+      "loss": 0.695651113986969,
+      "validation_ap": 0.53986215722218
+    }
+  ],
+  "gat": {
+    "validation": {
+      "threshold": 0.74,
+      "precision": 0.4528301886792453,
+      "recall": 0.8934010152284264,
+      "pr_auc_average_precision": 0.5427734434547669,
+      "confusion_matrix_tn_fp_fn_tp": [
+        2284,
+        638,
+        63,
+        528
+      ],
+      "n": 3513,
+      "positives": 591
+    },
+    "test": {
+      "threshold": 0.74,
+      "precision": 0.15980975029726516,
+      "recall": 0.6204986149584487,
+      "pr_auc_average_precision": 0.21029221535103756,
+      "confusion_matrix_tn_fp_fn_tp": [
+        12054,
+        3533,
+        411,
+        672
+      ],
+      "n": 16670,
+      "positives": 1083
+    }
+  },
+  "baseline": {
+    "validation": {
+      "threshold": 0.7699999999999999,
+      "precision": 0.6347724620770129,
+      "recall": 0.9204737732656514,
+      "pr_auc_average_precision": 0.7137266454662783,
+      "confusion_matrix_tn_fp_fn_tp": [
+        2609,
+        313,
+        47,
+        544
+      ],
+      "n": 3513,
+      "positives": 591
+    },
+    "test": {
+      "threshold": 0.7699999999999999,
+      "precision": 0.19159700835899693,
+      "recall": 0.804247460757156,
+      "pr_auc_average_precision": 0.20089333148993846,
+      "confusion_matrix_tn_fp_fn_tp": [
+        11912,
+        3675,
+        212,
+        871
+      ],
+      "n": 16670,
+      "positives": 1083
+    }
+  },
+  "threshold_behavior": {
+    "0.3": {
+      "threshold": 0.3,
+      "precision": 0.109375,
+      "recall": 0.9048938134810711,
+      "pr_auc_average_precision": 0.21029221535103756,
+      "confusion_matrix_tn_fp_fn_tp": [
+        7607,
+        7980,
+        103,
+        980
+      ],
+      "n": 16670,
+      "positives": 1083
+    },
+    "0.5": {
+      "threshold": 0.5,
+      "precision": 0.12876792508047996,
+      "recall": 0.8125577100646353,
+      "pr_auc_average_precision": 0.21029221535103756,
+      "confusion_matrix_tn_fp_fn_tp": [
+        9633,
+        5954,
+        203,
+        880
+      ],
+      "n": 16670,
+      "positives": 1083
+    },
+    "0.7": {
+      "threshold": 0.7,
+      "precision": 0.15305479739659877,
+      "recall": 0.6731301939058172,
+      "pr_auc_average_precision": 0.21029221535103756,
+      "confusion_matrix_tn_fp_fn_tp": [
+        11553,
+        4034,
+        354,
+        729
+      ],
+      "n": 16670,
+      "positives": 1083
+    },
+    "0.9": {
+      "threshold": 0.9,
+      "precision": 0.29988851727982163,
+      "recall": 0.24838411819021236,
+      "pr_auc_average_precision": 0.21029221535103756,
+      "confusion_matrix_tn_fp_fn_tp": [
+        14959,
+        628,
+        814,
+        269
+      ],
+      "n": 16670,
+      "positives": 1083
+    }
+  },
+  "training_total_seconds": 32.44339780000155,
+  "false_positive_change": {
+    "gat_count": 3533,
+    "baseline_count": 3675,
+    "relative_reduction": 0.038639455782312926,
+    "caveat": "Each threshold chosen by validation F2; operating points and recalls differ. Not a matched-recall business savings estimate."
+  }
+}

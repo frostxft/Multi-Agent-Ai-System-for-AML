@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zen ◈ Multi-Agent AI System for AML Detection and Reporting</title>
+<link rel="stylesheet" href="/assets/style.css?v=33">
+</head>
+<body data-experience="judge">
+<aside class="sidebar">
+  <a class="brand" href="/"><span class="brand-mark">◈</span><span>ZEN</span></a>
+  <div class="side-section">WORKSPACE</div>
+  <nav class="side-nav">
+    <button class="side-link" data-nav="desk">Investigation Desk</button>
+    <button class="side-link active" data-nav="cases">Cases <span class="side-count" id="side-review-count" hidden></span></button>
+  </nav>
+  <div class="side-section">CASE WORKSPACE</div>
+  <nav class="side-nav">
+    <button class="side-link" data-nav="overview">Overview</button>
+    <button class="side-link" data-nav="network">Network &amp; Explanation</button>
+    <button class="side-link" data-nav="evidence">Evidence &amp; Report</button>
+    <button class="side-link" data-nav="review">Review &amp; Audit</button>
+  </nav>
+  <div class="side-section">SYSTEM</div>
+  <nav class="side-nav">
+    <button class="side-link" data-nav="architecture">How ZEN Works</button>
+    <button class="side-link" data-nav="technical">Technical Mode</button>
+    <button class="side-link" data-nav="audit">Audit trail</button>
+  </nav>
+  <div class="side-foot">TEAM ZEN<br>PES University · Bengaluru<br><span>CAPSTONE PROTOTYPE</span></div>
+</aside>
+
+<main>
+  <header class="topbar">
+    <div class="topbar-title">
+      <span class="eyebrow">Zen ◈</span>
+      <h1>Multi-Agent AI System for AML Detection and Reporting</h1>
+    </div>
+    <div class="topbar-actions">
+      <div class="experience-switch" role="group" aria-label="Presentation mode">
+        <button id="judge-mode" aria-pressed="true">Judge Mode</button>
+        <button id="technical-mode" aria-pressed="false">Technical Mode</button>
+      </div>
+      <div class="connection"><span class="dot"></span><span id="mode">Connecting…</span></div>
+      <button id="credentials" class="link-btn">Access token</button>
+    </div>
+  </header>
+
+  <div class="notice" id="data-notice">Research prototype · Checking data provenance… All narratives are drafts. Human approval does not file a SAR.</div>
+  <div id="error" role="alert" hidden></div>
+
+  <section class="hero" id="welcome">
+    <div class="hero-copy">
+      <span class="eyebrow">Zen ◈ Multi-Agent AI System for AML Detection and Reporting</span>
+      <h2>From transaction networks to<br>evidence-backed human review.</h2>
+      <p>ZEN flags transaction networks for investigation, explains the model result, gathers supporting evidence and prepares a checked report draft. <strong>A human investigator makes the final decision.</strong></p>
+    </div>
+    <div class="hero-side">
+      <div class="action-row">
+        <button id="start-investigation" class="primary" disabled>Start investigation</button>
+        <button id="show-performance" class="quiet">Technical mode</button>
+      </div>
+      <small id="start-note">Loading the recorded demonstration cases…</small>
+    </div>
+  </section>
+
+  <section class="desk card" id="desk">
+    <div id="desk-content"><div class="muted">Loading investigation…</div></div>
+  </section>
+
+  <details class="architecture">
+    <summary>System architecture · How ZEN works</summary>
+    <div class="arch">
+      <div class="arch-flow">
+        <span class="arch-node">Elliptic benchmark data</span><i>↓</i>
+        <span class="arch-node">1 · Detection — transaction network · AI detection</span><i>↓</i>
+        <span class="arch-node">2 · Risk triage — thresholds · network signals</span><i>↓</i>
+        <span class="arch-node">3 · Investigation — evidence retrieval · dossier · demo KYC/sanctions</span><i>↓</i>
+        <span class="arch-node">4 · SAR narrative — evidence-grounded draft</span><i>↓</i>
+        <span class="arch-node">5 · Compliance — validation · provenance · baseline cross-check</span><i>↓</i>
+        <span class="arch-node">6 · Human review — approve / request changes / reject / reopen</span><i>↓</i>
+        <span class="arch-node">7 · Audit — persistent hash-linked trail</span>
+      </div>
+      <div class="arch-side">
+        <div class="arch-note"><strong>Detection explainability (inside Detection)</strong><p>GNNExplainer — local detection explanation · SHAP — separate logistic-baseline cross-check (Compliance), not the detection model.</p></div>
+        <div class="arch-note"><strong>Implemented prototype</strong><p>Elliptic Bitcoin benchmark · transaction graph · GAT + logistic baseline · graph explanation · evidence-grounded draft · human review · audit.</p></div>
+        <div class="arch-note"><strong>DEMO / SYNTHETIC PROTOTYPE ENRICHMENT</strong><p>KYC profile fields and static sanctions screening are deterministic synthetic demo data — not from the Elliptic benchmark or live customer/sanctions systems, and never detection-model inputs.</p></div>
+        <div class="arch-note muted"><strong>Future work (not implemented)</strong><p>Live KYC · live sanctions screening · SubgraphX explainability · calibrated probabilities · production bank integration · prospective evaluation · demonstrated false-positive reduction · identity resolution · drift monitoring · federated deployment · automatic disposition.</p></div>
+      </div>
+    </div>
+  </details>
+
+  <details class="glossary">
+    <summary>New to ZEN? Five helpful definitions</summary>
+    <dl>
+      <dt>Transaction node</dt><dd>One transaction in the benchmark graph. It is not a customer account.</dd>
+      <dt>Model score</dt><dd>The graph model output used to rank transactions. It is not a calibrated probability.</dd>
+      <dt>Explanation</dt><dd>A model-derived indication of which features and relationships influenced the prediction; not causal or legal evidence.</dd>
+      <dt>Evidence</dt><dd>Source-linked facts and separately labeled model outputs that support the investigation.</dd>
+      <dt>Human review</dt><dd>An investigator decides what to do with the draft. ZEN does not autonomously file a report.</dd>
+    </dl>
+  </details>
+
+  <p id="collection-scope" class="muted"></p>
+
+  <section class="stats" id="stats"><div class="card">Loading benchmark and model state…</div></section>
+
+  <div class="workspace">
+    <section class="queue" id="queue-panel">
+      <div class="queue-head">
+        <h2 id="queue-title">Cases</h2>
+        <button id="refresh" class="icon-btn" title="Refresh">↻</button>
+      </div>
+      <p class="muted" id="queue-enrichment-note">Every case includes clearly-labelled DEMO / SYNTHETIC KYC and sanctions enrichment — not detection-model inputs.</p>
+      <form id="create">
+        <label for="transaction">Inspect a transaction</label>
+        <div class="input-row">
+          <input id="transaction" placeholder="Dataset transaction ID" required>
+          <button type="submit">Run</button>
+        </div>
+      </form>
+      <label class="search">Search<input id="queue-search" placeholder="Case or transaction ID"></label>
+      <div class="filter-grid">
+        <label>Status<select id="queue-status"><option value="">All</option><option>awaiting_review</option><option>changes_requested</option><option>approved</option><option>rejected</option><option>failed</option></select></label>
+        <label>Priority<select id="queue-priority"><option value="">All</option><option>high</option><option>medium</option><option>low</option></select></label>
+      </div>
+      <details class="filters">
+        <summary>Advanced filters</summary>
+        <label>Min model score<input id="queue-score" type="number" min="0" max="1" step="0.01" placeholder="Any"></label>
+        <label>Compliance<select id="queue-compliance"><option value="">All</option><option>review_ready</option><option>issues_found</option><option>pending</option></select></label>
+        <label>Narrative provider<select id="queue-provider"><option value="">All</option><option>extractive</option><option>local</option><option>ollama</option></select></label>
+        <label>Min readiness<input id="queue-readiness" type="number" min="0" max="100" placeholder="Any"></label>
+        <label>Created on/after<input id="queue-date" type="date"></label>
+      </details>
+      <p id="queue-count" class="muted"></p>
+      <div id="cases"></div>
+    </section>
+
+    <section id="detail" class="detail">
+      <div class="empty">
+        <span class="empty-mark">◈</span>
+        <h2>Follow the evidence.</h2>
+        <p>Select a case to inspect its network, model explanation, evidence and review history.</p>
+      </div>
+    </section>
+  </div>
+
+  <details class="technical" id="technical-performance">
+    <summary>Technical Mode · model performance &amp; diagnostics</summary>
+    <p class="muted">Evaluation results and engineering diagnostics for evaluators. These do not change live case decisions.</p>
+    <div id="technical-stats" class="stats"></div>
+    <div class="technical-grid">
+      <details class="tech-panel"><summary id="evaluation-title">Model performance &amp; evaluation</summary><div id="evaluation"></div></details>
+      <details class="tech-panel"><summary>Runtime status &amp; model provenance</summary><div class="panel-actions"><button id="system-status" class="quiet">Load current status</button></div><div id="system-details"></div></details>
+    </div>
+    <details class="tech-panel"><summary>Compare filtered cases</summary><div id="comparison" class="table-scroll"></div></details>
+  </details>
+
+  <footer>Research prototype · Elliptic Bitcoin benchmark · Human review required · Reports are drafts <span>Team Zen / 2026</span></footer>
+</main>
+
+<div id="print-report" aria-hidden="true"></div>
+
+<script src="/assets/presentation.js?v=33" defer></script>
+<script src="/assets/judge.js?v=33" defer></script>
+<script src="/assets/workstation.js?v=33" defer></script>
+<script src="/assets/app.js?v=33" defer></script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+{
+  "dataset_fingerprint": "903ac5dfcabafb86638bbceddef49530bdad2743c6cfe71a7d1c78bf0da9f043",
+  "model_id": "gat-7ad1b9876c4bdb71",
+  "transactions_match_canonical_manifest": true,
+  "persistence_restart_verified": true,
+  "database": "artifacts\\capstone-release-verification\\cases.db",
+  "cases": [
+    {
+      "id": "ZEN-630a3fca34b6",
+      "transaction_id": "106776627",
+      "status": "awaiting_review",
+      "checks": {
+        "awaiting_review": true,
+        "no_human_decisions": true,
+        "all_stages": true,
+        "model_flagged": true,
+        "connected_context": true,
+        "consistent": true,
+        "source_rechecked": true,
+        "audit_integrity": true
+      },
+      "timings": {
+        "detection": 2.3747680999986187,
+        "triage": 0.002928099998825928,
+        "investigation": 0.006817999998020241,
+        "narrative": 2.448227599998063,
+        "compliance": 0.23107940000045346,
+        "pipeline_last_run_seconds": 5.089770000002318
+      },
+      "error": null
+    },
+    {
+      "id": "ZEN-612dfb0cf6b5",
+      "transaction_id": "218047279",
+      "status": "awaiting_review",
+      "checks": {
+        "awaiting_review": true,
+        "no_human_decisions": true,
+        "all_stages": true,
+        "model_flagged": true,
+        "connected_context": true,
+        "consistent": true,
+        "source_rechecked": true,
+        "audit_integrity": true
+      },
+      "timings": {
+        "detection": 0.4940416000026744,
+        "triage": 0.009864600000582868,
+        "investigation": 0.010609900000417838,
+        "narrative": 1.4500068000015744,
+        "compliance": 0.23346390000006068,
+        "pipeline_last_run_seconds": 2.2342038999995566
+      },
+      "error": null
+    },
+    {
+      "id": "ZEN-00bff3dfc117",
+      "transaction_id": "219679769",
+      "status": "awaiting_review",
+      "checks": {
+        "awaiting_review": true,
+        "no_human_decisions": true,
+        "all_stages": true,
+        "model_flagged": true,
+        "connected_context": true,
+        "consistent": true,
+        "source_rechecked": true,
+        "audit_integrity": true
+      },
+      "timings": {
+        "detection": 0.31997149999733665,
+        "triage": 0.004648899997846456,
+        "investigation": 0.011068299998441944,
+        "narrative": 1.1745403999993869,
+        "compliance": 0.23519479999959003,
+        "pipeline_last_run_seconds": 1.7785373000006075
+      },
+      "error": null
+    },
+    {
+      "id": "ZEN-76afd50e6970",
+      "transaction_id": "195439532",
+      "status": "awaiting_review",
+      "checks": {
+        "awaiting_review": true,
+        "no_human_decisions": true,
+        "all_stages": true,
+        "model_flagged": true,
+        "connected_context": true,
+        "consistent": true,
+        "source_rechecked": true,
+        "audit_integrity": true
+      },
+      "timings": {
+        "detection": 0.3710520999993605,
+        "triage": 0.004655500000808388,
+        "investigation": 0.008083799999440089,
+        "narrative": 0.9140234000005876,
+        "compliance": 0.23010969999813824,
+        "pipeline_last_run_seconds": 1.5592233999996097
+      },
+      "error": null
+    }
+  ]
+}

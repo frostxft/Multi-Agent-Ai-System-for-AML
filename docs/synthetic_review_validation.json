@@ -1,0 +1,28 @@
+{
+  "label": "SYNTHETIC REVIEW TEST \u2014 automated controls, not real human decisions",
+  "case_id": "ZEN-99c0f71da2fa",
+  "data_kind": "synthetic_test",
+  "status": "approved",
+  "revision": 14,
+  "reviews": [
+    {
+      "actor": "local-demo-reviewer",
+      "decision": "request_changes",
+      "notes": "SYNTHETIC REVIEW TEST: automated request-changes control check; no real human AML judgment.",
+      "provenance": "human_decision",
+      "reviewed_output_hash": "34519384f4b8c8a8b1d8f042bd84e1104538ec214e9b34c34f2d0232b0941cf1",
+      "reviewed_revision": 12,
+      "timestamp": "2026-09-13T19:14:39.595424+00:00"
+    },
+    {
+      "actor": "local-demo-reviewer",
+      "decision": "approve",
+      "notes": "SYNTHETIC REVIEW TEST: automated approval control check after inspecting consistent fixture; not a real human decision or SAR filing.",
+      "provenance": "human_decision",
+      "reviewed_output_hash": "34519384f4b8c8a8b1d8f042bd84e1104538ec214e9b34c34f2d0232b0941cf1",
+      "reviewed_revision": 13,
+      "timestamp": "2026-09-13T19:14:51.557280+00:00"
+    }
+  ],
+  "audit_valid": true
+}

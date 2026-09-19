@@ -1,0 +1,112 @@
+{
+  "selection_rule": "Time step >=35; score >= model threshold; descending score then transaction ID; incoming two-hop context 3..1500 nodes at target cutoff; skip previously covered targets. No labels consulted.",
+  "canonical_transaction": "106776627",
+  "canonical_case_id": "ZEN-e0fbc40247b5",
+  "transactions": [
+    "106776627",
+    "218047279",
+    "219679769",
+    "195439532"
+  ],
+  "model_id": "gat-7ad1b9876c4bdb71",
+  "dataset_fingerprint": "903ac5dfcabafb86638bbceddef49530bdad2743c6cfe71a7d1c78bf0da9f043",
+  "cases": [
+    {
+      "id": "ZEN-e0fbc40247b5",
+      "transaction_id": "106776627",
+      "status": "awaiting_review",
+      "checks": {
+        "awaiting_review": true,
+        "no_human_decisions": true,
+        "all_stages": true,
+        "model_flagged": true,
+        "connected_context": true,
+        "consistent": true,
+        "source_rechecked": true,
+        "audit_integrity": true
+      },
+      "timings": {
+        "compliance": 0.3976351000019349,
+        "detection": 3.8770901000025333,
+        "investigation": 0.022652200001175515,
+        "narrative": 5.182469700001093,
+        "pipeline_last_run_seconds": 9.557128899999952,
+        "triage": 0.010538800001086202
+      },
+      "error": null
+    },
+    {
+      "id": "ZEN-25d85bcc29e9",
+      "transaction_id": "218047279",
+      "status": "awaiting_review",
+      "checks": {
+        "awaiting_review": true,
+        "no_human_decisions": true,
+        "all_stages": true,
+        "model_flagged": true,
+        "connected_context": true,
+        "consistent": true,
+        "source_rechecked": true,
+        "audit_integrity": true
+      },
+      "timings": {
+        "compliance": 0.3027369999981602,
+        "detection": 1.2958795999984432,
+        "investigation": 0.040368099998886464,
+        "narrative": 3.4905330000001413,
+        "pipeline_last_run_seconds": 5.204869900000631,
+        "triage": 0.010817099999258062
+      },
+      "error": null
+    },
+    {
+      "id": "ZEN-9fd9372b4cf1",
+      "transaction_id": "219679769",
+      "status": "awaiting_review",
+      "checks": {
+        "awaiting_review": true,
+        "no_human_decisions": true,
+        "all_stages": true,
+        "model_flagged": true,
+        "connected_context": true,
+        "consistent": true,
+        "source_rechecked": true,
+        "audit_integrity": true
+      },
+      "timings": {
+        "compliance": 0.35426490000099875,
+        "detection": 0.8040494000015315,
+        "investigation": 0.011884700001246529,
+        "narrative": 3.4650282000002335,
+        "pipeline_last_run_seconds": 4.6883869000012055,
+        "triage": 0.008268999998108484
+      },
+      "error": null
+    },
+    {
+      "id": "ZEN-3b8585448f3a",
+      "transaction_id": "195439532",
+      "status": "awaiting_review",
+      "checks": {
+        "awaiting_review": true,
+        "no_human_decisions": true,
+        "all_stages": true,
+        "model_flagged": true,
+        "connected_context": true,
+        "consistent": true,
+        "source_rechecked": true,
+        "audit_integrity": true
+      },
+      "timings": {
+        "compliance": 0.27833470000041416,
+        "detection": 0.7931692000020121,
+        "investigation": 0.021531599999434547,
+        "narrative": 1.8928752000028908,
+        "pipeline_last_run_seconds": 3.053308800001105,
+        "triage": 0.011760000001231674
+      },
+      "error": null
+    }
+  ],
+  "timing_scope": "Per-stage wall clock; pipeline excludes dataset/checkpoint startup and human review. First narrative includes model loading; later cases use cache."
+}
