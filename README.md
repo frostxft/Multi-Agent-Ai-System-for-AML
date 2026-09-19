@@ -1,6 +1,6 @@
 # Multi-Agent AI System for AML Detection and Reporting
 
-**Zen ◈ — Team Zen · PES University capstone prototype**
+**Team Zen · PES University capstone prototype**
 
 A graph-based, human-in-the-loop prototype that turns the Elliptic Bitcoin transaction graph into evidence-backed investigation cases. It scores transaction nodes with a Graph Attention Network (GAT), explains the local model result, assembles source-traceable evidence, drafts a SAR-style report, validates the draft for grounding and provenance, and routes the case to a human reviewer with a persistent audit trail.
 
