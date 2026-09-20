@@ -1,0 +1,33 @@
+{
+  "case_id": "ZEN-e0fbc40247b5",
+  "model_id": "gat-7ad1b9876c4bdb71",
+  "dataset_fingerprint": "903ac5dfcabafb86638bbceddef49530bdad2743c6cfe71a7d1c78bf0da9f043",
+  "narrative": {
+    "candidate_fact_count": 6,
+    "candidate_summary_count": 30,
+    "llm_used": true,
+    "method": "greedy decoding constrained to retrieved fact pairs",
+    "model_path": "artifacts/flan-t5-small",
+    "prompt": "Select the most relevant two facts for a suspicious activity review. Use only these facts: A directed payment-flow edge links transaction 106776619 to transaction 106776627. Model gat-7ad1b9876c4bdb71 assigned transaction 106776627 an uncalibrated illicit-class score of 0.964630. A directed payment-flow edge links transaction 106344367 to transaction 106776619. A directed payment-flow edge links transaction 106345517 to transaction 106776619. A directed payment-flow edge links transaction 106344367 to transaction 106345517. A directed payment-flow edge links transaction 106333212 to transaction 106776619.",
+    "prompt_sha256": "cc317506d6b9970654f82d0186c25c6657a39fc7bdce1bbd1b9c80c01da25a06",
+    "weight_sha256": {
+      "pytorch_model.bin": "4a8c0174fa3ee6fe2ffd0f6e21992d4ca4ad1e9b12bd14155b57479e27f56292"
+    }
+  },
+  "synthesis_evidence_ids": [
+    "E0011",
+    "E0006"
+  ],
+  "checkpoint_sha256": "7ad1b9876c4bdb715cbb88097e93c126df90ba02dc8d82f882578506625b5597",
+  "training_configuration": {
+    "hidden": 16,
+    "heads": 2,
+    "layers": 2,
+    "dropout": 0.1,
+    "learning_rate": 0.005,
+    "weight_decay": 0.0005,
+    "positive_loss_weight": 8.1887845993042,
+    "baseline": "LogisticRegression balanced, C=1, max_iter=1500",
+    "threshold_policy": "maximum validation F2 over 0.05..0.95 step 0.01; lowest threshold on tie"
+  }
+}

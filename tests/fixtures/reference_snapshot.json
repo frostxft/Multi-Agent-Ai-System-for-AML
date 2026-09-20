@@ -1,0 +1,8 @@
+{
+  "kind": "synthetic_demo",
+  "source": "Team Zen deterministic software-test fixture",
+  "version": "synthetic-reference-v1",
+  "transaction_entity_links": {"3500": "DEMO-ENTITY-001"},
+  "profiles": {"DEMO-ENTITY-001": {"display_name": "SYNTHETIC Demo Entity 001", "profile_status": "fixture_only"}},
+  "sanctions": [{"entity_id": "DEMO-ENTITY-001", "reference_id": "DEMO-LIST-001", "finding": "Synthetic exact-ID match for workflow testing only"}]
+}

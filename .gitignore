@@ -1,0 +1,121 @@
+# ==========================================================================
+# Team Zen — Multi-Agent AI System for AML Detection and Reporting
+#
+# GitHub holds the reproducible source and documentation only.
+# Large, private, downloaded, generated or local-only files stay on disk.
+# ==========================================================================
+
+# --------------------------------------------------------------------------
+# Python
+# --------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+.eggs/
+
+# --------------------------------------------------------------------------
+# Virtual environments
+# --------------------------------------------------------------------------
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# --------------------------------------------------------------------------
+# Test / tooling caches and coverage
+# --------------------------------------------------------------------------
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.nox/
+.coverage
+.coverage.*
+htmlcov/
+
+# --------------------------------------------------------------------------
+# Node (tooling only; the front end itself is dependency-free)
+# --------------------------------------------------------------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# --------------------------------------------------------------------------
+# Build output
+# --------------------------------------------------------------------------
+build/
+dist/
+
+# --------------------------------------------------------------------------
+# Runtime logs
+# --------------------------------------------------------------------------
+*.log
+logs/
+
+# --------------------------------------------------------------------------
+# Temporary / editor swap files
+# --------------------------------------------------------------------------
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*~
+
+# --------------------------------------------------------------------------
+# Local data, generated artifacts and model weights (keep locally only)
+# --------------------------------------------------------------------------
+data/
+datasets/
+artifacts/
+
+# Explicit model / cache locations (already covered by artifacts/; listed for clarity)
+artifacts/flan-t5-small/
+artifacts/hf_cache/
+
+# Large tabular / serialized data
+*.csv
+*.parquet
+*.pkl
+*.pickle
+
+# Large ML / model weight files
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.ckpt
+*.onnx
+
+# --------------------------------------------------------------------------
+# Databases
+# --------------------------------------------------------------------------
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+*.sqlite
+*.sqlite3
+
+# --------------------------------------------------------------------------
+# Secrets and keys (never commit real values)
+# --------------------------------------------------------------------------
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+
+# --------------------------------------------------------------------------
+# OS / editor
+# --------------------------------------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/

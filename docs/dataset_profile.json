@@ -1,0 +1,43 @@
+{
+  "kind": "benchmark",
+  "source": "C:\\Users\\manju\\OneDrive\\Documents\\AML\\data\\elliptic\\raw",
+  "fingerprint": "903ac5dfcabafb86638bbceddef49530bdad2743c6cfe71a7d1c78bf0da9f043",
+  "nodes": 203769,
+  "edges": 234355,
+  "features": 165,
+  "node_semantics": "Bitcoin transactions",
+  "edge_semantics": "Directed payment flow between transactions",
+  "time_steps": [
+    1,
+    49
+  ],
+  "class_counts": {
+    "-1": 157205,
+    "0": 42019,
+    "1": 4545
+  },
+  "graph_checks": {
+    "duplicate_directed_edges": 0,
+    "self_edges": 0,
+    "cross_time_edges": 0,
+    "backward_time_edges": 0
+  },
+  "splits": {
+    "train": {
+      "labeled": 26381,
+      "illicit": 2871
+    },
+    "validation": {
+      "labeled": 3513,
+      "illicit": 591
+    },
+    "test": {
+      "labeled": 16670,
+      "illicit": 1083
+    }
+  },
+  "limitations": [
+    "No customer identity, KYC, sanctions, exact calendar dates or interpretable currency amounts",
+    "Anonymized features; illicit labels are benchmark categories, not proof of a crime"
+  ]
+}
